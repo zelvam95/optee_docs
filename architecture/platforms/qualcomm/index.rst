@@ -50,10 +50,9 @@ architecture family:
 	- **Arm Crypto Extensions** acceleration (``CFG_CRYPTO_WITH_CE``), which in
 	  turn enables CE-accelerated AES, AES-GCM and SHA-1/SHA-256.
 	- The **Hardware Unique Key** length is set to 32 bytes
-	  (``CFG_HW_UNIQUE_KEY_LENGTH``). Note that the platform does not yet provide
-	  its own ``tee_otp_get_hw_unique_key()`` implementation, so the default
-	  (test) key from the OP-TEE core is used unless a board-specific provider is
-	  added.
+	  (``CFG_HW_UNIQUE_KEY_LENGTH``). Most chipsets do not yet provide their own
+	  ``tee_otp_get_hw_unique_key()`` implementation, so the default (test) key
+	  from the OP-TEE core is used unless a board-specific provider is added.
 
 Per-architecture documentation
 ******************************
